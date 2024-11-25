@@ -13,17 +13,17 @@ h1, h2, h3 {
 }
 
 .main-container {
+    background: url(../images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
 }
 
-.logo-img {
-
-}
-
 .container-1 {
-    margin-top: 100px;
+    padding-top: 100px;
 }
 
 .first-header {
@@ -265,4 +265,131 @@ footer {
 
 .socials-1:hover {
     color: hsl(201, 11%, 66%);
+}
+
+@media screen  and (min-width: 1040px){
+    .main-container {
+        padding-left: 0px;
+        padding-right: 0px;
+        background: url(../images/bg-header-desktop.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: contain;
+    }
+
+    .text-1 {
+        width: 37%;
+    }
+
+    .btn-container {
+        flex-direction: row;
+    }
+    
+    #btn-1 {
+        width: 20%;
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+
+    #btn-2 {
+        width: 20%;
+        margin-left: 20px;
+    }
+
+    .text-2 {
+        width: 40%;
+    }
+
+    .container-3 {
+        flex-direction: row;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .computer-img {
+        width: 60%;
+        position: relative;
+        left: -40px;
+    }
+
+    #header-1 {
+        text-align: start;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .text-3 {
+        text-align: start;
+    }
+
+    .text-4 {
+        width: 40%;
+    }
+
+    .devices-img {
+        width: 60%;
+    }
+
+    .doc-container {
+        flex-direction: row;
+        gap: 10px;
+
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    .doc-1 {
+        width: 100%;
+    }
+
+    .blacklist-text, .icon-text, .preview-text {
+        width: 85%;
+    }
+
+    .world-icons {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .logo-1, .logo-2, .logo-3, .logo-4, .logo-5 {
+        width: 20%;
+    }
+
+    .clipboard-text {
+        width: 40%;
+    }
+
+    .logo-img-1 {
+        width: 5%;
+        height: 5%;
+    }
+
+    .first-grid {
+        display: grid;
+        grid-template-columns: 120px 120px 120px;
+        grid-template-rows: auto auto;
+        column-gap: 10px;
+        row-gap: 1px;
+        text-align: start;
+    }
+
+    .second-flex {
+        display: flex;
+  
+    }
+
+    .socials {
+        width: 10%;
+    }
+
+    footer {
+        padding-bottom: 0;
+    }
 }
